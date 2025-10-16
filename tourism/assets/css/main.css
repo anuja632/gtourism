@@ -29,9 +29,9 @@ Version: 1.0.0
   --white: #fff;
 
   /* Theme Colors (from your image) */
-  --theme:  #ffce00;     /* Primary purple */
+  --theme: #7d22ff;     /* Primary purple */
   --theme-2: #200084;   /* Deep purple accent */
-
+  --theme-1: #ffce00;   /* Deep purple accent */
   /* Optional secondary gradient */
   --gradient-theme: linear-gradient(90deg, #7d22ff, #200084);
 
@@ -1516,12 +1516,12 @@ span {
   line-height: 36px;
   border-radius: 50px;
   text-align: center;
-  color: var(--theme);
+  color: var(--theme-1);
   background-color: var(--white);
   transition: all 0.4s ease-in-out;
 }
 .footer-newsletter-wrapper .footer-newsletter-item .social-icon a:hover {
-  background-color: var(--theme);
+  background-color: var(--theme-1);
   color: var(--white);
 }
 @media (max-width: 1199px) {
@@ -1769,7 +1769,7 @@ span {
   position: relative;
 }
 .sticky.header-3 .header-main .main-menu ul li a {
-    color: var(--header) !important;
+    color: var(--white) !important;
 }
 @media (max-width: 575px) {
   .cta-items .cta-text p {
@@ -2350,6 +2350,12 @@ span {
 }
 .deals-offer-items .offer-business .link-btn {
   color: var(--black);
+}
+.deals-offer-section {
+  background: 
+    linear-gradient(rgba(125, 34, 255, 0.6), rgba(125, 34, 255, 0.6)),
+    url('assets/img/offer/bg.jpg') center/cover no-repeat;
+  background-blend-mode: multiply; /* try overlay, soft-light, or screen */
 }
 
 .deals-offer-section .section-title-area .array-button {
@@ -4233,7 +4239,7 @@ span {
     cursor: pointer;
 }
 .theme-btn:hover{
-  background-color: var(--theme) !important;
+  background-color: var(--theme-1) !important;
   color: var(--white) !important;
 }
 .video-wrapper .watch-button .theme-btn.style-2 {
@@ -5384,7 +5390,7 @@ span {
   height: 100%;
   content: "";
   border-radius: 0px 0px 16px 16px;
-  background: #242625;
+  background: white;
   width: 32%;
   z-index: -1;
 }
@@ -5405,7 +5411,7 @@ span {
   margin-bottom: 30px;
 }
 .footer-widget-wrapper-new .single-widget-items .widget-head h4 {
-  color: var(--white);
+  color:var(--white);
   position: relative;
   padding-bottom: 20px;
 }
@@ -5416,7 +5422,7 @@ span {
   width: 60px;
   height: 2px;
   content: "";
-  background-color: var(--theme);
+  background-color: var(--theme-1);
 }
 .footer-widget-wrapper-new .single-widget-items .footer-content {
   text-align: center;
@@ -5427,11 +5433,11 @@ span {
   }
 }
 .footer-widget-wrapper-new .single-widget-items .footer-content h3 {
-  color: var(--white);
+  color: black;
   margin-bottom: 10px;
 }
 .footer-widget-wrapper-new .single-widget-items .footer-content p {
-  color: var(--white);
+  color: black;
 }
 .footer-widget-wrapper-new .single-widget-items .footer-content .footer-input {
   position: relative;
@@ -5446,13 +5452,13 @@ span {
   }
 }
 .footer-widget-wrapper-new .single-widget-items .footer-content .footer-input input {
-  background: var(--white);
-  border: none;
+  /* background: var(--black); */
+  border: 1px solid black;
   outline: none;
   width: 100%;
   padding: 18px 20px;
   border-radius: 100px;
-  color: #727171;
+  color: white;
   line-height: 1;
   text-transform: capitalize;
   margin-bottom: 20px;
@@ -5493,8 +5499,8 @@ span {
   line-height: 50px;
   border-radius: 50%;
   text-align: center;
-  color: var(--theme);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--theme-1);
   transition: all 0.4s ease-in-out;
 }
 .footer-widget-wrapper-new .single-widget-items .footer-content .social-icon a:hover {
@@ -5544,7 +5550,7 @@ span {
   border-radius: 5px;
   text-align: center;
   color: var(--header);
-  background-color: var(--theme);
+  background-color: var(--theme-1);
 }
 .footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .icon i {
   font-size: 18px;
@@ -5579,7 +5585,7 @@ span {
   color: var(--white);
 }
 .footer-bottom .footer-wrapper p span {
-  color: var(--theme);
+  color: var(--theme-1);
 }
 .footer-bottom .footer-wrapper .bottom-list {
   display: flex;
@@ -5730,6 +5736,7 @@ span {
   left: 0;
   z-index: 9999;
   width: 100%;
+  background: linear-gradient(90deg,#7d22ff 4%, #200084 36%);
 }
 .header-1.header-3 .header-logo {
   display: none;
@@ -5754,10 +5761,10 @@ span {
   color: var(--theme) !important;
 }
 .header-1.header-3 .header-main .main-menu ul li .submenu {
-  color: var(--header);
+  color: var(--black);
 }
 .header-1.header-3 .header-main .main-menu ul li .submenu li a {
-  color: var(--header);
+  color: var(--black);
 }
 .header-1.header-3 .header-main .main-menu ul li .submenu li.has-dropdown > a::after {
   position: absolute;
@@ -5791,15 +5798,11 @@ span {
   left: 50%;
   transform: translateX(-50%);
 }
-/* .header-11{
-  background: linear-gradient(
-  90deg, 
-  rgba(48, 6, 152, 0.9) 0%, 
-  rgba(89, 23, 208, 0.9) 50%, 
-  rgba(117, 31, 244, 0.9) 100%
-);
+.header-11{
+  background:linear-gradient(90deg,#7d22ff 4%, #200084 36%);
+
 color: white !important;
-} */
+}
 @media (max-width: 1399px) {
   .header-1.header-2 .logo-2 {
     width: 150px;
@@ -5819,7 +5822,7 @@ color: white !important;
 }
 
 .header-top-section-new {
-  background-color: rgba(95, 162, 179, 0.3294117647);
+  background-color:var(--theme-1);
 }
 .header-top-section-new .container-fluid {
   padding: 0 150px;
@@ -5856,9 +5859,9 @@ color: white !important;
   z-index: -1;
   clip-path: polygon(78% 0, 100% 106%, 100% 100%, 0 100%, 0 0);
 }
-/* .header-main .main-menu ul li a {
+.header-main .main-menu ul li a {
   color:white !important;
-} */
+}
 .header-main .main-menu ul li .submenu {
     position: absolute;
     top: 115%;
@@ -5870,7 +5873,7 @@ color: white !important;
     visibility: hidden;
     opacity: 0;
     transform-origin: top center;
-    color: var(--white) !important;
+    color: black !important;
     transform: translateY(-10px);
     transition: all 0.4s 
 ease-in-out;
@@ -6022,7 +6025,7 @@ ease-in-out;
   visibility: hidden;
   opacity: 0;
   transform-origin: top center;
-  color: var(--header);
+  color: black;
   transform: translateY(-10px);
   transition: all 0.4s ease-in-out;
   border-top: 6px solid var(--theme);
@@ -6038,7 +6041,7 @@ ease-in-out;
   z-index: 11;
   font-size: 16px;
   font-weight: 500;
-  color: var(--header);
+  color: black !important;
   line-height: 38px;
   padding: 0px 0px 0px 32px;
   width: 100%;
@@ -6248,7 +6251,7 @@ ease-in-out;
 
 
 .sticky.header-3 .header-main .main-menu ul li a {
-  color: var(--header);
+  color: var(--white);
 }
 .sticky.header-3 .header-main .main-menu ul li a:hover {
   color: var(--theme) !important;
@@ -6257,7 +6260,7 @@ ease-in-out;
   color: var(--header);
 }
 .sticky.header-3 .header-main .main-menu ul li .submenu li a {
-  color: var(--white);
+  color: var(--black) !important;
 }
 .sticky.header-3 .header-main .sidebar__toggle {
   color: var(--header);
@@ -9440,18 +9443,52 @@ input.main-search-input::placeholder {
   gap: 10px;
 }
 
-.theme-btn {
-  background: #f5c518;
-  border: none;
-  color: #000;
-  font-weight: bold;
-  padding: 12px;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 4px;
-  cursor: pointer;
+/* Common Icon Button Styles */
+.icon-btn {
+  position: fixed;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.theme-btn:hover {
-  background: #ffcb00;
+/* ✅ WhatsApp Button */
+.icon-btn.whatsapp {
+  bottom: 90px;
+  background-color: #25D366;
+}
+
+/* ✅ Phone Button */
+.icon-btn.phone {
+  bottom: 160px;
+  background-color: #007AFF;
+}
+
+/* Subtle Hover Effect */
+.icon-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 768px) {
+  .icon-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    right: 15px;
+  }
+  .icon-btn.whatsapp {
+    bottom: 80px;
+  }
+  .icon-btn.phone {
+    bottom: 140px;
+  }
 }
