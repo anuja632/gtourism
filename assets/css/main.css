@@ -5758,7 +5758,7 @@ span {
 .header-logo img,
 .logo-2 img {
   max-height: 110px;
-  width: auto;
+  width: 150px;
   display: block;
   object-fit: contain;
   transition: all 0.3s ease;
