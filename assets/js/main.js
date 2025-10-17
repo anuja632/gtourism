@@ -34,8 +34,13 @@ $(document).ready(function() {
     });
 
     repeatAnimations(); // initial check
+    
 });
 
+$(window).on("scroll", function () {
+  $("#couples-bar").css("width", "90%");
+  $("#family-bar").css("width", "80%");
+});
 
 (function($) {
     "use strict";
@@ -119,7 +124,28 @@ $(document).ready(function() {
         $('.single-select').niceSelect();
     }
     
-
+  const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        576: { slidesPerView: 2 },
+        992: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 }
+      }
+    });
     ///>> Hero Slider Start <<//
     const sliderswiper = new Swiper('.hero-slider', {
         // Optional parameters
