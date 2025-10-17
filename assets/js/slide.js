@@ -21,26 +21,27 @@ const featuredTours = [
     link: "tour.html?location=Karnataka"
   }
 ];
+    const wrapper = document.getElementById("featured-tours");
 
-const wrapper = document.getElementById("featured-tours");
+    // Inject slides dynamically with WOW.js animation
+    featuredTours.forEach((tour, index) => {
+      wrapper.innerHTML += `
+        <div class="swiper-slide wow fadeInRight" data-wow-delay="${0.2 + index*0.2}s">
+          <div class="feature-tour-items">
+            <div class="feature-tour-image">
+              <img src="${tour.img}" alt="${tour.location}">
+              <ul class="location">
+                <li><i class="fa-light fa-location-dot"></i>${tour.location}</li>
+              </ul>
+            </div>
+            <div class="feature-tour-content">
+              <h4><a href="${tour.link}">${tour.title}</a></h4>
+              <h5>${tour.price}<span>/Starting</span></h5>
+              <a href="${tour.link}" class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
 
-featuredTours.forEach(tour => {
-  wrapper.innerHTML += `
-    <div class="swiper-slide">
-      <div class="feature-tour-items">
-        <div class="feature-tour-image">
-          <img src="${tour.img}" alt="${tour.location}">
-          <ul class="location">
-            <li><i class="fa-light fa-location-dot"></i>${tour.location}</li>
-          </ul>
-        </div>
-        <div class="feature-tour-content">
-          <h4><a href="${tour.link}">${tour.title}</a></h4>
-          <h5>${tour.price}<span>/Starting</span></h5>
-          <a href="${tour.link}" class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  `;
-});
 
