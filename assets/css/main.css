@@ -4490,6 +4490,7 @@ span {
   height:550px; /* let aspect-ratio or explicit height control it */
   object-position: center center;
   border-radius: 15px;
+  border:1px solid #000;
 }
 .featured-flight-items .featured-content {
   margin-top: 20px;
@@ -5563,14 +5564,17 @@ span {
 .footer-widget-wrapper-new .single-widget-items .list-items li:not(:last-child) {
   margin-bottom: 18px;
 }
+.footer-widget-wrapper-new .single-widget-items .list-items li a :hover {
+  color: var(--white);
+}
 .footer-widget-wrapper-new .single-widget-items .list-items li:hover {
   margin-left: 5px;
 }
 .footer-widget-wrapper-new .single-widget-items .list-items li:hover a {
-  color: var(--theme);
+  color: var(--theme-1);
 }
 .footer-widget-wrapper-new .single-widget-items .list-items li:hover i {
-  color: var(--theme);
+  color: var(--theme-1);
 }
 .footer-widget-wrapper-new .single-widget-items .contact-info .contact-items {
   display: flex;
@@ -8310,6 +8314,87 @@ ease-in-out;
   padding-bottom: 100px;
   resize: none;
 }
+/* Fullscreen preloader */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #7d22ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* World map background */
+.world-map {
+  position: absolute;
+  inset: 0;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/2000px-World_map_-_low_resolution.svg.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+/* Preloader content */
+.preloader-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Circle container */
+.circle-container {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+/* Plane orbit container */
+.plane-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 50% 50%;
+  animation: spin 2s linear infinite;
+}
+
+/* Plane image */
+.plane {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Centered loading text */
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.pagefully {
+  display: none;
+}
+
+/* 
 
 .preloader {
   align-items: center;
@@ -8425,7 +8510,7 @@ ease-in-out;
 .preloader.loaded .loader-section .bg {
   width: 0;
   transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
-}
+} */
 
 .search-wrap {
   width: 100%;
