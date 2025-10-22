@@ -10,6 +10,8 @@
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
 
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -225,111 +227,36 @@
 
 
 
-        <!-- Hero section start -->
-        <section class="hero-section">
-            <div class="swiper hero-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="hero-1">
-                            <div class="hero-bg bg-cover" style="background-image: url(./assets/img/hero\ banner.jpg);"></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-10">
-                                        <div class="hero-content">
-                                            <div class="sub-title">
-                                                Get unforgettable pleasure with us
-                                            </div>
-                                            <h1>
-                                                Let’s make your best <br> trip with us
-                                            </h1>
-                                            <div class="booking-list-area">
-                                                <div class="booking-list">
-                                                    <div class="icon">
-                                                        <img src="assets/img/hero/icon-1.png" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h6>Location</h6>
-                                                        <div class="form">
-                                                            <select class="single-select w-100">
-                                                                <option>Asia</option>
-                                                                <option>India</option>
-                                                                <option>Europe</option>
-                                                                <option>America</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="booking-list">
-                                                    <div class="icon">
-                                                        <img src="assets/img/hero/icon-2.png" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h6>Activities Type</h6>
-                                                        <div class="form">
-                                                            <select class="single-select w-100">
-                                                                <option> Activities Type</option>
-                                                                <option> Adventure 02</option>
-                                                                <option>Adventure 03</option>
-                                                                <option> Adventure 04</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="booking-list">
-                                                    <div class="icon">
-                                                        <img src="assets/img/hero/icon-3.png" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h6>Activate Day</h6>
-                                                        <div class="form-clt">
-                                                            <input type="date" id="date1" name="date1">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="booking-list">
-                                                    <div class="icon">
-                                                        <img src="assets/img/hero/icon-3.png" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h6>Traveler</h6>
-                                                        <div class="form">
-                                                            <select class="single-select w-100">
-                                                                <option>01</option>
-                                                                <option>02</option>
-                                                                <option>03</option>
-                                                                <option>04</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button class="theme-btn" type="submit">Search</button>
-                                            </div>
-                                        </div>
-                                        <div class="counter-area">
-                                            <div class="counter-items">
-                                                <div class="counter-text">
-                                                    <h2><span class="count">20.5</span>k</h2>
-                                                    <p>Destinations</p>
-                                                </div>
-                                                <div class="counter-text">
-                                                    <h2><span class="count">100.5</span>k</h2>
-                                                    <p>Tour Packages</p>
-                                                </div>
-                                                <div class="counter-text">
-                                                    <h2><span class="count">150.5</span>k</h2>
-                                                    <p>Happy Travelers</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-                </div>
-            </div>
-        </section>
+
+  <!-- Banner Slider Start -->
+  <section class="banner-slider">
+    <div class="swiper main-banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="banner-slide">
+            <img src="./assets/img/1.jpg" alt="banner1" loading="lazy">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="banner-slide">
+            <img src="./assets/img/2.jpg" alt="banner2" loading="lazy">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="banner-slide">
+            <img src="./assets/img/4.jpg" alt="banner3" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination Dots -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </section>
+  <!-- Banner Slider End -->
+
+        
 <!-- Feature Section Start -->
 <section class="feature-section my-5">
     <div class="container">
@@ -1230,7 +1157,29 @@
   </div>
 </section>
 
-
+        <!-- Cta-offe-Section Start -->
+        <section class="cta-offer-section section-padding fix bg-cover" style="background-image: url(assets/img/3.jpg);">
+            <div class="container">
+                <div class="cta-offer-wrapper">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="offer-content">
+                                <div class="section-title">
+                                    <span class="sub-title text-bg-dark wow fadeInUp">What we’re Offering</span>
+                                    <h2 class="text-dark wow fadeInUp wow" data-wow-delay=".2s">
+                                        Get 30% Discount Every <br>
+                                         Tour
+                                    </h2>
+                                </div>
+                                
+                                <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">Explore Flight<i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
 <!-- Testimonial Section Start -->
 <section class="testimonial-section section-padding fix bg-cover">
     <div class="bag-shape float-bob-x">
@@ -1853,6 +1802,8 @@
         <!--<< Wow Animation Js >>-->
         <script src="assets/js/wow.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 
 <script>
   new WOW({

@@ -1,3 +1,21 @@
+$(document).ready(function () {
+  const swiper = new Swiper('.main-banner', {
+    loop: true,
+    autoplay: {
+      delay: 3000, // 3 seconds
+      disableOnInteraction: false,
+    },
+    effect: 'fade', // Fade transition
+    speed: 1000,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    // Remove navigation
+    // navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+  });
+});
+
 $(document).ready(function() {
 
     // Function to check if element is in viewport
@@ -83,6 +101,7 @@ window.addEventListener("load", function() {
         $(".df-search-area").removeClass("opened");
         $(".body-overlay").removeClass("opened");
       });
+      
   
       //>> Sticky Header Js Start <<//
   

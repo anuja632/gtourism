@@ -9707,4 +9707,66 @@ input.main-search-input::placeholder {
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
+    /* Banner Slider Styles */
+    .banner-slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
 
+    .banner-slider .swiper-wrapper {
+      width: 100%;
+    }
+
+    .banner-slider .swiper-slide {
+      position: relative;
+      width: 100%;
+    }
+
+    .banner-slide img {
+      width: 100%;
+      height: 100%; /* Full viewport height */
+      display: block;
+    }
+
+    /* Pagination Dots */
+    .swiper-pagination {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%,50%);
+      z-index: 10;
+    }
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.7);
+      opacity: 1;
+      border-radius: 50%;
+      margin: 0 5px;
+      transition: all 0.3s;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #ffe700;
+      transform: scale(1.2);
+    }
+
+
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+ 
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 36px;
+        height: 36px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+    }
