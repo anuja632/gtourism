@@ -38,7 +38,7 @@ Version: 1.0.0
   /* Theme Colors (from your image) */
   --theme: #7d22ff;     /* Primary purple */
   --theme-2: #200084;   /* Deep purple accent */
-  --theme-1: #ffce00;   /* Deep purple accent */
+  --theme-1: #ffe700;   /* Deep purple accent */
   /* Optional secondary gradient */
   --gradient-theme: linear-gradient(90deg, #7d22ff, #200084);
 
@@ -2374,7 +2374,7 @@ span {
 }
 .deals-offer-section {
   background: 
-    linear-gradient(rgba(255, 206, 0, 1), rgba(255, 206, 0, 0.6)), /* #ffce00 overlay */
+    linear-gradient(rgba(255, 206, 0, 1), rgba(255, 206, 0, 0.6)), /* #ffe700 overlay */
     url('assets/img/offer/bg.jpg') center/cover no-repeat;
   background-blend-mode: multiply; /* you can also try overlay, soft-light, or screen */
 }
@@ -5783,7 +5783,7 @@ span {
 
 /* Menu icons */
 .header-11 .main-menu ul li a i, .header-main .main-menu ul li a i  {
-    color: #ffce00 !important; /* Change to your preferred color */
+    color: #ffe700 !important; /* Change to your preferred color */
     margin-right: 5px; /* optional spacing */
 }
 .header-1.header-3::before {
@@ -6041,7 +6041,7 @@ ease-in-out;
   color: var(--header);
   padding: 10px;
   text-transform: capitalize;
-  border: 1px solid #ffce00;
+  border: 1px solid #ffe700;
   border-radius: 8px;                /* fixed border radius */
   transition: all 0.3s ease-in-out;
 }
