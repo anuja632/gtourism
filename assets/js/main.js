@@ -41,7 +41,11 @@ $(window).on("scroll", function () {
   $("#couples-bar").css("width", "90%");
   $("#family-bar").css("width", "80%");
 });
-
+// Hide preloader when page fully loads
+window.addEventListener("load", function() {
+  document.getElementById("preloader").style.display = "none";
+  document.querySelector(".pagefully").style.display = "block";
+});
 (function($) {
     "use strict";
   
