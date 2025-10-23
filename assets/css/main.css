@@ -4978,7 +4978,7 @@ span {
   .activities-details-wrapper .activities-details-content .activities-box-wrap {
     border-radius: 12px;
     background-color: var(--bg);
-    padding: 40px 0px;
+    padding: 40px 10px;
     margin-top: 50px;
 }
 .activities-details-wrapper .activities-details-content .activities-box-wrap .activities-box-area .activities-box-item .content span {
@@ -5535,6 +5535,13 @@ span {
   .footer-widget-wrapper-new .single-widget-items .footer-content .footer-input input {
     padding: 15px 20px;
   }
+  
+      .footer-widget-wrapper-new .single-widget-items .footer-content {
+        text-align: center;
+        background: white;
+        padding: 28px;
+    }
+  
 }
 @media (max-width: 767px) {
   .footer-widget-wrapper-new .single-widget-items .footer-content .footer-input input {
