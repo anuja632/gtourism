@@ -691,6 +691,16 @@ span {
   border: none;
   box-shadow: none;
 }
+@media (max-width:1200px){
+  .header-logo img, .logo-2 img {
+    max-height: 110px;
+    width: 100px !important;
+    display: block;
+    object-fit: contain;
+    transition: all 0.3s 
+ease;
+}
+}
 @media (max-width: 1199px) {
   .about-wrapper-2 .about-image .about-image-2 .circle-image {
     left: 50%;
