@@ -3319,75 +3319,7 @@ span {
   height: 100%;
   border-radius: 18px;
 }
-.new-top-desti-thumb::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  border-radius: 18px;
-  background: linear-gradient(0deg, rgba(14, 14, 14, 0.7) 0%, rgba(14, 14, 14, 0.7) 100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-.new-top-desti-thumb .content {
-  position: absolute;
-  bottom: -100px;
-  left: 30px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-  z-index: 9;
-}
-.new-top-desti-thumb .content h4 a {
-  color: var(--white);
-}
-.new-top-desti-thumb .content h4 a:hover {
-  color: var(--theme);
-}
-.new-top-desti-thumb .content p {
-  color: var(--white);
-}
-.new-top-desti-thumb .icon {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  border-radius: 50%;
-  border: 2px solid var(--white);
-  text-align: center;
-  color: var(--white);
-  display: inline-block;
-  position: absolute;
-  top: -100px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-.new-top-desti-thumb .icon:hover {
-  background-color: var(--theme);
-  border: 2px solid var(--theme);
-}
-.new-top-desti-thumb:hover::before {
-  opacity: 1;
-  visibility: visible;
-}
-.new-top-desti-thumb:hover .content {
-  bottom: 30px;
-  opacity: 1;
-  visibility: visible;
-}
-.new-top-desti-thumb:hover .icon {
-  top: 50%;
-  opacity: 1;
-  visibility: visible;
-}
+
 
 .destination-details-wrapper .main-bar .activities-card {
   border: 1px solid var(--border);
@@ -4910,7 +4842,7 @@ span {
   color: var(--white);
   position: absolute;
   bottom: 30px;
-  left: 50%;
+  /* left: 50%; */
   transform: translateX(-50%);
   width: 100%;
   max-width: 295px;
