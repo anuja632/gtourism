@@ -4961,13 +4961,17 @@ span {
   margin-bottom: 40px;
 }
 @media (max-width: 700px) {
-  .activities-details-wrapper .activities-details-content .activities-box-wrap .activities-box-area {
+  .destination-details-wrapper .destination-details-items .activities-box-wrap .activities-box-area,.activities-details-wrapper .activities-details-content .activities-box-wrap .activities-box-area {
     flex-wrap: wrap !important;
     margin-left: 10px;
     /* gap: 30px; */
-  }}
+  }
+  .destination-details-wrapper .main-bar .activities-card .from-bar .from-list , .activities-details-wrapper .main-bar .activities-card .from-bar .from-list {
+  flex-direction: column;
+  }
+}
 @media (max-width: 991px) {
-  .activities-details-wrapper .activities-details-content .activities-box-wrap .activities-box-area {
+  .destination-details-wrapper .destination-details-items .activities-box-wrap .activities-box-area, .activities-details-wrapper .activities-details-content .activities-box-wrap .activities-box-area {
     flex-wrap: nowrap;
     gap: 30px;
   }
@@ -8702,6 +8706,9 @@ input.main-search-input::placeholder {
 @media (max-width: 991px) {
   .section-padding {
     padding: 80px 10px;
+  }
+  .section-bg-2 {
+    height:700px;
   }
 }
 
