@@ -553,7 +553,21 @@ span {
   flex-basis: 70px;
   text-align: center;
   background-color: var(--theme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.about-wrapper .about-content .about-area .about-items .icon img {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Tilt (left-right) effect on hover */
+.about-wrapper .about-content .about-area .about-items:hover .icon img {
+  transform: rotateY(180deg);
+}
+
+
 
 .about-wrapper-2 {
   margin-bottom: 37px;

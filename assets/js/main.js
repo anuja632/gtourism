@@ -269,37 +269,41 @@ window.addEventListener("load", function() {
 
 
     //>> Brand Slider Start <<//
+if ($('.brand-slider').length > 0) {
+  const brandSlider = new Swiper(".brand-slider", {
+    spaceBetween: 30,
+    speed: 4000, // higher = smoother continuous motion
+    loop: true,
+    centeredSlides: true,
+    allowTouchMove: false, // optional: disable manual swipe for smooth loop
+    autoplay: {
+      delay: 0, // continuous motion
+      disableOnInteraction: false,
+    },
+    freeMode: true, // keeps it continuously moving
+    freeModeMomentum: false,
+    grabCursor: false,
 
-    if($('.brand-slider').length > 0) {
-        const brandSlider = new Swiper(".brand-slider", {
-            spaceBetween: 30,
-            speed: 1300,
-            loop: true,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-            },
+    breakpoints: {
+      1199: {
+        slidesPerView: 5,
+      },
+      991: {
+        slidesPerView: 4,
+      },
+      767: {
+        slidesPerView: 3,
+      },
+      575: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+  });
+}
 
-            breakpoints: {
-                1199: {
-                    slidesPerView: 5,
-                },
-                991: {
-                    slidesPerView: 4,
-                },
-                767: {
-                    slidesPerView: 3,
-                },
-                575: {
-                    slidesPerView: 2,
-                },
-                0: {
-                    slidesPerView: 1,
-                },
-            },
-        });
-    }
 
     //>> Testimonial Slider Start <<//
     if($('.testimonial-slider').length > 0) {
