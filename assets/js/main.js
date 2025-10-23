@@ -15,6 +15,12 @@ $(document).ready(function () {
     // navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
   });
 });
+$(document).ready(function() {
+  // When the banner is clicked
+  $('.offerbanner').on('click', function() {
+    window.location.href = 'contact.html'; // Redirect to contact page
+  });
+});
 
 $(document).ready(function() {
 
@@ -419,10 +425,10 @@ window.addEventListener("load", function() {
                     slidesPerView: 3,
                 },
                 991: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                 },
                 767: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                 },
                 575: {
                     slidesPerView: 2,
