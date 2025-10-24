@@ -1660,6 +1660,7 @@ ease;
 .contact-us-main .contact-box-items .content h3 {
   font-weight: 600;
   margin-bottom: 5px;
+  text-transform: none;
 }
 .contact-us-main .contact-box-items .content p {
   font-size: 18px;
@@ -5648,11 +5649,13 @@ ease;
   font-size: 18px;
   color: var(--white);
 }
-.footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .content h6 {
-  font-weight: 400;
+.footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .content h5 {
+  font-weight: 500;
   color: var(--white);
+  text-transform: none;
+
 }
-.footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .content h6 a {
+.footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .content h5 a {
   color: var(--white);
 }
 
