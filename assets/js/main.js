@@ -15,6 +15,7 @@ $(document).ready(function () {
     // navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
   });
 });
+
 $(document).ready(function() {
   // When the banner is clicked
   $('.offerbanner').on('click', function() {
@@ -108,6 +109,7 @@ window.addEventListener("load", function() {
         $(".body-overlay").removeClass("opened");
       });
       
+      
   
       //>> Sticky Header Js Start <<//
   
@@ -152,7 +154,25 @@ window.addEventListener("load", function() {
        if ($('.single-select').length) {
         $('.single-select').niceSelect();
     }
-    
+const breadcrumbswiper = new Swiper('.breadcrumb-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 2000,           // slide stays for 2 seconds instead of 4
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  speed: 700   // transition between slides is faster (0.7s)
+});
+
+
   const swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
@@ -266,43 +286,6 @@ window.addEventListener("load", function() {
         init.on("slideChange", animated);
     }
     animated_swiper(sliderActive3, sliderInit3);
-
-
-    //>> Brand Slider Start <<//
-if ($('.brand-slider').length > 0) {
-  const brandSlider = new Swiper(".brand-slider", {
-    spaceBetween: 30,
-    speed: 4000, // higher = smoother continuous motion
-    loop: true,
-    centeredSlides: true,
-    allowTouchMove: false, // optional: disable manual swipe for smooth loop
-    autoplay: {
-      delay: 0, // continuous motion
-      disableOnInteraction: false,
-    },
-    freeMode: true, // keeps it continuously moving
-    freeModeMomentum: false,
-    grabCursor: false,
-
-    breakpoints: {
-      1199: {
-        slidesPerView: 5,
-      },
-      991: {
-        slidesPerView: 4,
-      },
-      767: {
-        slidesPerView: 3,
-      },
-      575: {
-        slidesPerView: 2,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  });
-}
 
 
     //>> Testimonial Slider Start <<//
@@ -517,6 +500,7 @@ if ($('.brand-slider').length > 0) {
             },
         });
     }
+    
 
     //>> Instagram Slider Start <<//
     if($('.instagram-banner-slider').length > 0) {
@@ -634,6 +618,44 @@ if ($('.brand-slider').length > 0) {
             },
         });
     }
+    
+
+    //>> Brand Slider Start <<//
+if ($('.brand-slider').length > 0) {
+  const brandSlider = new Swiper(".brand-slider", {
+    spaceBetween: 30,
+    speed: 4000, // higher = smoother continuous motion
+    loop: true,
+    centeredSlides: true,
+    allowTouchMove: false, // optional: disable manual swipe for smooth loop
+    autoplay: {
+      delay: 0, // continuous motion
+      disableOnInteraction: false,
+    },
+    freeMode: true, // keeps it continuously moving
+    freeModeMomentum: false,
+    grabCursor: false,
+
+    breakpoints: {
+      1199: {
+        slidesPerView: 5,
+      },
+      991: {
+        slidesPerView: 4,
+      },
+      767: {
+        slidesPerView: 3,
+      },
+      575: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+  });
+}
+
 
     //>> tour Slider Start <<//
     if($('.team-slider').length > 0) {
