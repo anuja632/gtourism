@@ -23,44 +23,6 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-
-    // Function to check if element is in viewport
-    function isInViewport($el) {
-        var elementTop = $el.offset().top;
-        var elementBottom = elementTop + $el.outerHeight();
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    }
-
-    function repeatAnimations() {
-        $('.wow').each(function() {
-            var $el = $(this);
-            if (isInViewport($el)) {
-                // get animation classes
-                var animClasses = $el.attr('class').split(' ').filter(function(c) {
-                    return c !== 'wow' && c !== 'animated';
-                }).join(' ');
-
-                // reset & re-add animation
-                $el.removeClass('animated ' + animClasses);
-                void $el[0].offsetWidth; // force reflow
-                $el.addClass('animated ' + animClasses);
-            }
-        });
-    }
-
-    // Trigger on scroll & resize, throttled for performance
-    var throttleTimer;
-    $(window).on('scroll resize', function() {
-        clearTimeout(throttleTimer);
-        throttleTimer = setTimeout(repeatAnimations, 300); // check every 100ms max
-    });
-
-    repeatAnimations(); // initial check
-    
-});
 
 $(window).on("scroll", function () {
   $("#couples-bar").css("width", "90%");

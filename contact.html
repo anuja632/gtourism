@@ -311,63 +311,63 @@
                                     </h2>
                                 </div>
                                 <div class="comment-form-wrap">
-                               <form action="https://formsubmit.co/info@gtourism.in" id="contact-form" method="POST">
+<form action="https://formsubmit.co/juturunandini32@gmail.com" id="contact-form" method="POST">
+  <input type="hidden" name="_subject" value="New Contact Form Submission!">
+  <input type="hidden" name="_template" value="box">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://gtourism.in/thank-you.html">
+
   <div class="row g-4">
-    <!-- Name -->
     <div class="col-lg-6">
       <div class="form-clt">
-        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="text" name="name" placeholder="Your Name" required>
       </div>
     </div>
 
-    <!-- Email -->
     <div class="col-lg-6">
       <div class="form-clt">
-        <input type="email" name="email" id="email4" placeholder="Your Email" required>
+        <input type="email" name="email" placeholder="Your Email" required>
       </div>
     </div>
 
-    <!-- Phone -->
     <div class="col-lg-6">
       <div class="form-clt">
-        <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
       </div>
     </div>
 
-    <!-- Services -->
     <div class="col-lg-6">
       <div class="form-clt">
-        <select name="services" id="services" style="color:white;" required>
-    <option value="" disabled selected >Select Service</option>
-          <!-- <optgroup label="Domestic"> -->
-            <option value="Kerala">Kerala</option>
-            <option value="Tamil Nadu">Tamil Nadu</option>
-            <option value="Karnataka">Karnataka</option>
-          </optgroup>
-          <!-- <optgroup label="International"> -->
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="America">America</option>
-          </optgroup>
+        <select name="services" required>
+          <option value="" disabled selected>Select Service</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="America">America</option>
         </select>
       </div>
     </div>
 
-    <!-- Message -->
     <div class="col-lg-12">
       <div class="form-clt">
-        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+        <textarea name="message" placeholder="Your Message"></textarea>
       </div>
     </div>
 
-    <!-- Submit Button -->
     <div class="col-lg-6">
-      <button type="submit" class="theme-btn">
-        Submit Message
-      </button>
+      <button type="submit" class="theme-btn">Submit Message</button>
     </div>
   </div>
 </form>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function() {
+  alert("✅ Your message has been sent successfully!");
+});
+</script>
+
 
                                 </div>
                             </div>
@@ -539,5 +539,11 @@
         <script src="assets/js/ajax-mail.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
-    </body>
+        <script>
+           document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop normal form submit
+    alert("✅ Form submitted successfully!");
+    this.submit(); // Continue submitting to FormSubmit
+  });
+        </script>    </body>
 </html>
