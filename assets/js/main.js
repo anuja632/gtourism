@@ -16,6 +16,7 @@ $(document).ready(function () {
   });
 });
 
+
 $(document).ready(function() {
   // When the banner is clicked
   $('.offerbanner').on('click', function() {
@@ -825,6 +826,7 @@ if ($('.brand-slider').length > 0) {
       }
       
       loader();
+
     // Simple Captcha Generator
   const num1 = Math.floor(Math.random() * 10) + 1;
   const num2 = Math.floor(Math.random() * 10) + 1;
@@ -846,6 +848,7 @@ if ($('.brand-slider').length > 0) {
     }
   });
   
-  })(jQuery); // End jQuery
+  })
+  (jQuery); // End jQuery
 
 

@@ -1706,8 +1706,9 @@ ease;
   border-radius: 100px;
   border: 3px solid white;
   padding: 16px 20px;
-  background-color: transparent;
+  background-color: transparent !important;
   font-weight: 400;
+  color:white;
   /* z-index:2; */
 }
 /* Maintain dropdown text styling */
@@ -1721,7 +1722,7 @@ ease;
 
 .contact-us-wrapper .contact-us-contact .comment-form-wrap .form-clt select option {
     color: var(--black); /* color of actual selectable options */
-    background-color: #fff; /* background of dropdown list */
+    /* background-color: #fff; background of dropdown list */
 }
 
 .contact-us-wrapper .contact-us-contact .comment-form-wrap .form-clt textarea {
@@ -1992,7 +1993,6 @@ ease;
   object-fit: cover; /* ensures image fills box, cropped if needed */
   border-radius: 16px;
 }
-
 .instagram-wrapper .instagram-banner-items .banner-image::before {
   position: absolute;
   top: 0;
@@ -2970,7 +2970,7 @@ ease;
   border-radius: 100px;
   background: rgba(2, 165, 206, 0.1);
   color: var(--theme) ;
-  padding: 10px 20px;
+  padding: 10px 10px;
   min-width: 140px;
 }
 .destination-card-items .destination-content .price .theme-btn.style-2::before {
@@ -5468,9 +5468,10 @@ ease;
   height: 100%;
   content: "";
   border-radius: 0px 0px 16px 16px;
-  background: white;
+  /* background: white; */
   width: 32%;
   z-index: -1;
+  color:white;
 }
 @media (max-width: 1199px) {
   .footer-widget-wrapper-new::before {
@@ -5515,7 +5516,9 @@ ease;
   margin-bottom: 10px;
 }
 .footer-widget-wrapper-new .single-widget-items .footer-content p {
-  color: black;
+  color:white;
+  /* max-width:300px; */
+  text-align:justify;
 }
 .footer-widget-wrapper-new .single-widget-items .footer-content .footer-input {
   position: relative;
@@ -5546,11 +5549,6 @@ ease;
     padding: 15px 20px;
   }
   
-      .footer-widget-wrapper-new .single-widget-items .footer-content {
-        text-align: center;
-        background: white;
-        padding: 28px;
-    }
   
 }
 @media (max-width: 767px) {
@@ -5563,11 +5561,7 @@ ease;
   .footer-widget-wrapper-new .single-widget-items .footer-content .footer-input input {
     padding: 14px 20px;
   }
-      .footer-widget-wrapper-new .single-widget-items .footer-content {
-        text-align: center;
-        background: white;
-        padding: 28px;
-    }
+   
 }
 .footer-widget-wrapper-new .single-widget-items .footer-content .footer-input input::placeholder {
   color: #727171;
@@ -5632,11 +5626,11 @@ ease;
 .footer-widget-wrapper-new .single-widget-items .contact-info .contact-items:not(:last-child) {
   margin-bottom: 30px;
 }
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .footer-widget-wrapper-new .single-widget-items .contact-info .contact-items {
     flex-wrap: wrap;
   }
-}
+} */
 .footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .icon {
   width: 40px;
   height: 40px;
@@ -5669,6 +5663,9 @@ ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.footer-bottom a {
+  color:white;
 }
 @media (max-width: 1199px) {
   .footer-bottom .footer-wrapper {
@@ -6518,9 +6515,6 @@ ease-in-out;
     padding: 20px;
   }
 }
-
-
-
 .breadcrumb-wrapper {
   position: relative;
 }
@@ -6541,27 +6535,11 @@ ease-in-out;
   position: relative;
 }
 .breadcrumb-carousel-section .swiper-slide {
-  width:100%;
   height: 500px; /* adjust as needed */
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center;
   position: relative;
 }
-    /* Slide images */
-    .breadcrumb-carousel-section .swiper-slide img {
-      width: 100% !important;
-      height: 500px; /* desktop height */
-      /* object-fit: contain; */
-      display: block;
-    }
-   /* Responsive */
-    @media (max-width: 767px) {
-      .breadcrumb-carousel-section .swiper-slide img {
-        height: 300px;
-        object-fit: contain;
-      }
-    }
-
 
 .breadcrumb-carousel-section .overlay {
   position: absolute;
@@ -6639,16 +6617,6 @@ ease-in-out;
 .breadcrumb-wrapper .page-heading .breadcrumb-list li a {
   color: var(--white);
 }
-/* Responsive Heights */
-@media (max-width: 767px) {
-  .breadcrumb-wrapper,
-  .breadcrumb-carousel-wrapper .swiper-slide {
-    height: 300px;
-    object-fit: contain;
-  }
-}
-
-
 
 ::-webkit-scrollbar {
   width: 4px;
@@ -7352,8 +7320,8 @@ ease-in-out;
   border: none;
   border-radius: 5px;
   padding: 16px 20px;
-  color: var(--text);
-  background-color: var(--bg);
+  /* color: var(--text);
+  background-color: var(--bg); */
   font-weight: 400;
 }
 .comment-form-wrap .form-clt input::placeholder, .comment-form-wrap .form-clt textarea::placeholder {
@@ -7412,6 +7380,83 @@ ease-in-out;
 }
 .comment-form-wrap .form-clt .theme-btn::before {
   background-color: var(--theme);
+}
+
+/* Mobile fixes for Plan Your Journey section */
+@media (max-width: 767px) {
+  .best-price-section {
+    padding: 30px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .hero-bottom .best-price-wrapper .content h2 {
+    font-size: 24px;
+  }
+  
+  .comment-form-wrap .row-cols-1 > .col {
+    margin-bottom: 15px;
+  }
+  
+  .comment-form-wrap .row-cols-1 > .col:last-child {
+    margin-bottom: 0;
+  }
+  
+  .comment-form-wrap .form-clt {
+    margin-bottom: 15px;
+  }
+  
+  .comment-form-wrap .form-clt .nice-select {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .comment-form-wrap .theme-btn {
+    margin-top: 10px;
+  }
+  
+  #contact-form220 .row {
+    gap: 0;
+  }
+  
+  #contact-form220 .col {
+    padding: 0 5px;
+  }
+  
+  .comment-form-wrap .form-clt span {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .comment-form-wrap .form-clt input, 
+  .comment-form-wrap .form-clt .nice-select {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .comment-form-wrap .form-clt .theme-btn {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  /* Fix for form validation overlapping */
+  .comment-form-wrap .form-clt .nice-select .list {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .comment-form-wrap .form-clt .nice-select.open .list {
+    z-index: 999;
+  }
+  
+  /* Ensure proper spacing when form is submitted/skipped */
+  .comment-form-wrap .row.g-4 {
+    --bs-gutter-y: 1rem;
+  }
+  
+  .comment-form-wrap .row.g-4 > .col {
+    margin-bottom: 1rem;
+  }
 }
 
 .hero-3 {
@@ -9733,7 +9778,7 @@ input.main-search-input::placeholder {
   border-radius: 3px;
   transition: width 1s ease;
 }
-/* City list */ .city-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; font-size: 15px; padding: 0; } .city-list li { list-style: none; position: relative; padding-left: 18px; } .city-list li::before { content: "•"; color: #f7c000; font-weight: bold; position: absolute; left: 0; }
+/* City list */ .city-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; font-size: 15px; padding: 0; } .city-list li { list-style: none; position: relative; padding-left: 18px; text-align: start; } .city-list li::before { content: "•"; color: #f7c000; font-weight: bold; position: absolute; left: 0; }
 /* Responsive Media Queries */
 
 /* Up to 1080px: keep 4 columns */
@@ -9987,7 +10032,116 @@ input.main-search-input::placeholder {
 }
 
 .footer-brands .brand-wrapper a img {
-  max-height: 50px;
+  max-height: 65px;
   width: auto;
   display: block;
+}
+
+
+/* ========================================
+   Tour Cards - Consistent Image Sizing
+   ======================================== */
+
+/* Ensure all tour card images have consistent dimensions */
+.destination-card-items .destination-image {
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px 12px 0 0;
+}
+
+.destination-card-items .destination-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.destination-card-items .destination-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive image heights */
+@media (max-width: 768px) {
+  .destination-card-items .destination-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .destination-card-items .destination-image {
+    height: 220px;
+  }
+}
+
+/* Ensure consistent card heights */
+.destination-card-items {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card-items:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.destination-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.destination-content .price {
+  margin-top: auto;
+}
+.heart {
+  width: 350px;      /* default desktop */
+  height: 350px;
+  object-fit: cover;
+  clip-path: url(#heart-path);
+  margin: 15px;
+}
+
+.heart-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ============================
+   📱 Mobile (small screens)
+   ============================ */
+@media (max-width: 480px) {
+  .heart {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* ============================
+   📱📱 Large Mobile / Small Tablets
+   ============================ */
+@media (max-width: 768px) {
+  .heart {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ============================
+   📱📱📱 Tablets / Small Laptops
+   ============================ */
+@media (max-width: 1024px) {
+  .heart {
+    width: 250px;
+    height: 250px;
+  }
 }
