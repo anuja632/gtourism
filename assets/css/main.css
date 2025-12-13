@@ -7791,6 +7791,9 @@ ease-in-out;
   height: 100px;
 }
 
+.footer-section{
+  background-image: url('img/footer.jpg');
+}
 .news-card-items {
   margin-top: 30px;
 }
