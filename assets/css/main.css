@@ -5637,12 +5637,12 @@ ease;
   line-height: 40px;
   border-radius: 5px;
   text-align: center;
-  color: var(--header);
+  color: var(--theme) !important;
   background-color: var(--theme-1);
 }
 .footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .icon i {
   font-size: 18px;
-  color: var(--white);
+  color: var(--theme);
 }
 .footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .content h5 {
   font-weight: 500;
@@ -9302,6 +9302,7 @@ input.main-search-input::placeholder {
   font-size: 18px;
   font-weight: 400;
   color: var(--header);
+  text-align: justify;
 }
 .testimonial-wrapper .testimonial-card-items .client-info-items {
   display: flex;
